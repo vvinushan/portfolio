@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarInsuranceDataInterface", "CarInsuranceDataInterface\CarInsuranceDataInterface.csproj", "{5F4F2ACD-B5D7-42B7-954A-A1770A8A9A64}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3FE5CD2-37B2-4CFC-B141-6A2A07E53BAC} = {A3FE5CD2-37B2-4CFC-B141-6A2A07E53BAC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceLibrary", "WCFServiceLibrary\WCFServiceLibrary.csproj", "{A3FE5CD2-37B2-4CFC-B141-6A2A07E53BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F4F2ACD-B5D7-42B7-954A-A1770A8A9A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4F2ACD-B5D7-42B7-954A-A1770A8A9A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4F2ACD-B5D7-42B7-954A-A1770A8A9A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4F2ACD-B5D7-42B7-954A-A1770A8A9A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FE5CD2-37B2-4CFC-B141-6A2A07E53BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FE5CD2-37B2-4CFC-B141-6A2A07E53BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FE5CD2-37B2-4CFC-B141-6A2A07E53BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FE5CD2-37B2-4CFC-B141-6A2A07E53BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B31EED5-4FBD-4552-A29E-D96EC719AF8B}
+	EndGlobalSection
+EndGlobal
