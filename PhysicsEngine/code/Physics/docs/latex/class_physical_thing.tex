@@ -1,0 +1,117 @@
+\hypertarget{class_physical_thing}{}\doxysection{Physical\+Thing Class Reference}
+\label{class_physical_thing}\index{PhysicalThing@{PhysicalThing}}
+
+
+A simple class with common attributes and a few const values used in a few places.  
+
+
+
+
+{\ttfamily \#include $<$physical\+Thing.\+h$>$}
+
+Inheritance diagram for Physical\+Thing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.532847cm]{class_physical_thing}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_physical_thing_af19c0d5df32f7da216fcd111c4e34a9c}{set\+User\+Data}} (void $\ast$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{class_physical_thing_abe8104571d70d92609f154d522ce9880}{m\+\_\+body}} = nullptr
+\begin{DoxyCompactList}\small\item\em Box2D body, no need to delete this as BOX2D will look after it. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_physical_thing_a40f7ce94212f8154e8e4a9864cde7c60}{mk\+\_\+f\+Density}} = 1.\+0f
+\begin{DoxyCompactList}\small\item\em Density of the material -\/ used to give mass. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_physical_thing_abb796eeea3127d7a77d84e1e43a3987d}{mk\+\_\+f\+Friction}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em Friction -\/ I guess this is only friction from movement, not when static. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_physical_thing_a6dbc7fdac106d2c4966d42cf27ce2c58}{mk\+\_\+f\+Restitution}} = 0.\+8f
+\begin{DoxyCompactList}\small\item\em Restitution -\/ bouncyness of stuff. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple class with common attributes and a few const values used in a few places. 
+
+Definition at line 16 of file physical\+Thing.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physical_thing_af19c0d5df32f7da216fcd111c4e34a9c}\label{class_physical_thing_af19c0d5df32f7da216fcd111c4e34a9c}} 
+\index{PhysicalThing@{PhysicalThing}!setUserData@{setUserData}}
+\index{setUserData@{setUserData}!PhysicalThing@{PhysicalThing}}
+\doxysubsubsection{\texorpdfstring{setUserData()}{setUserData()}}
+{\footnotesize\ttfamily void Physical\+Thing\+::set\+User\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file physical\+Thing.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_physical_thing_abe8104571d70d92609f154d522ce9880}\label{class_physical_thing_abe8104571d70d92609f154d522ce9880}} 
+\index{PhysicalThing@{PhysicalThing}!m\_body@{m\_body}}
+\index{m\_body@{m\_body}!PhysicalThing@{PhysicalThing}}
+\doxysubsubsection{\texorpdfstring{m\_body}{m\_body}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Physical\+Thing\+::m\+\_\+body = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Box2D body, no need to delete this as BOX2D will look after it. 
+
+
+
+Definition at line 18 of file physical\+Thing.\+h.
+
+\mbox{\Hypertarget{class_physical_thing_a40f7ce94212f8154e8e4a9864cde7c60}\label{class_physical_thing_a40f7ce94212f8154e8e4a9864cde7c60}} 
+\index{PhysicalThing@{PhysicalThing}!mk\_fDensity@{mk\_fDensity}}
+\index{mk\_fDensity@{mk\_fDensity}!PhysicalThing@{PhysicalThing}}
+\doxysubsubsection{\texorpdfstring{mk\_fDensity}{mk\_fDensity}}
+{\footnotesize\ttfamily float Physical\+Thing\+::mk\+\_\+f\+Density = 1.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Density of the material -\/ used to give mass. 
+
+
+
+Definition at line 19 of file physical\+Thing.\+h.
+
+\mbox{\Hypertarget{class_physical_thing_abb796eeea3127d7a77d84e1e43a3987d}\label{class_physical_thing_abb796eeea3127d7a77d84e1e43a3987d}} 
+\index{PhysicalThing@{PhysicalThing}!mk\_fFriction@{mk\_fFriction}}
+\index{mk\_fFriction@{mk\_fFriction}!PhysicalThing@{PhysicalThing}}
+\doxysubsubsection{\texorpdfstring{mk\_fFriction}{mk\_fFriction}}
+{\footnotesize\ttfamily float Physical\+Thing\+::mk\+\_\+f\+Friction = 0.\+1f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Friction -\/ I guess this is only friction from movement, not when static. 
+
+
+
+Definition at line 20 of file physical\+Thing.\+h.
+
+\mbox{\Hypertarget{class_physical_thing_a6dbc7fdac106d2c4966d42cf27ce2c58}\label{class_physical_thing_a6dbc7fdac106d2c4966d42cf27ce2c58}} 
+\index{PhysicalThing@{PhysicalThing}!mk\_fRestitution@{mk\_fRestitution}}
+\index{mk\_fRestitution@{mk\_fRestitution}!PhysicalThing@{PhysicalThing}}
+\doxysubsubsection{\texorpdfstring{mk\_fRestitution}{mk\_fRestitution}}
+{\footnotesize\ttfamily float Physical\+Thing\+::mk\+\_\+f\+Restitution = 0.\+8f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Restitution -\/ bouncyness of stuff. 
+
+
+
+Definition at line 21 of file physical\+Thing.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/include/\mbox{\hyperlink{physical_thing_8h}{physical\+Thing.\+h}}\end{DoxyCompactItemize}

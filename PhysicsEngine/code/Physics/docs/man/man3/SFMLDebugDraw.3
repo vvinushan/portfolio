@@ -1,0 +1,55 @@
+.TH "SFMLDebugDraw" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SFMLDebugDraw
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SFMLDebugDraw\&.h>\fP
+.PP
+Inherits sf::Drawable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetWorld\fP (b2World *world)"
+.br
+.RI "Set the world pointer\&. "
+.ti -1c
+.RI "void \fBdraw\fP (sf::RenderTarget &target, sf::RenderStates states) const"
+.br
+.RI "Draw debug shapes - overidden from drawable\&. "
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.RI "Clear shape buffer\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 22 of file SFMLDebugDraw\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void SFMLDebugDraw::clear ()"
+
+.PP
+Clear shape buffer\&. 
+.PP
+Definition at line 17 of file SFMLDebugDraw\&.cpp\&.
+.SS "void SFMLDebugDraw::draw (sf::RenderTarget & target, sf::RenderStates states) const"
+
+.PP
+Draw debug shapes - overidden from drawable\&. 
+.PP
+Definition at line 8 of file SFMLDebugDraw\&.cpp\&.
+.SS "void SFMLDebugDraw::setWorld (b2World * world)"
+
+.PP
+Set the world pointer\&. 
+.PP
+Definition at line 3 of file SFMLDebugDraw\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

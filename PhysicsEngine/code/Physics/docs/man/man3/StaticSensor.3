@@ -1,0 +1,65 @@
+.TH "StaticSensor" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+StaticSensor \- A simple block which can not move or rotate and does not coliide with circles\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <staticSensor\&.h>\fP
+.PP
+Inherits sf::RectangleShape, and \fBPhysicalThing\fP\&.
+.PP
+Inherited by \fBCloseDoorSensor\fP, \fBOpenDoorSensor\fP, and \fBdoorPressureSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitRectangle\fP (b2World *world, sf::Vector2f position, sf::Vector2f size, float orientation)"
+.br
+.ti -1c
+.RI "void \fBinitCircle\fP (b2World *world, sf::Vector2f position, float radius)"
+.br
+.ti -1c
+.RI "virtual void \fBonAction\fP (b2Body *other)=0"
+.br
+.RI "Thing the sensor does when hit\&. "
+.ti -1c
+.RI "virtual void \fBoffAction\fP (b2Body *other)=0"
+.br
+.RI "Thing the sensor does when hit stops\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A simple block which can not move or rotate and does not coliide with circles\&. 
+.PP
+Definition at line 19 of file staticSensor\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void StaticSensor::initCircle (b2World * world, sf::Vector2f position, float radius)"
+
+.PP
+Definition at line 36 of file staticSensor\&.cpp\&.
+.SS "void StaticSensor::initRectangle (b2World * world, sf::Vector2f position, sf::Vector2f size, float orientation)"
+
+.PP
+Definition at line 7 of file staticSensor\&.cpp\&.
+.SS "virtual void StaticSensor::offAction (b2Body * other)\fC [pure virtual]\fP"
+
+.PP
+Thing the sensor does when hit stops\&. 
+.PP
+Implemented in \fBOpenDoorSensor\fP, \fBdoorPressureSensor\fP, and \fBCloseDoorSensor\fP\&.
+.SS "virtual void StaticSensor::onAction (b2Body * other)\fC [pure virtual]\fP"
+
+.PP
+Thing the sensor does when hit\&. 
+.PP
+Implemented in \fBOpenDoorSensor\fP, \fBdoorPressureSensor\fP, and \fBCloseDoorSensor\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

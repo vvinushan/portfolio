@@ -1,0 +1,121 @@
+\hypertarget{class_close_door_sensor}{}\doxysection{Close\+Door\+Sensor Class Reference}
+\label{class_close_door_sensor}\index{CloseDoorSensor@{CloseDoorSensor}}
+
+
+{\ttfamily \#include $<$close\+Door\+Sensor.\+h$>$}
+
+Inheritance diagram for Close\+Door\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_close_door_sensor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_close_door_sensor_ade3078af50adefe564b8d3999f7b5e37}{Close\+Door\+Sensor}} ()
+\item 
+\mbox{\hyperlink{class_close_door_sensor_a0c562ed837b394cd23bfbdf78bdff175}{Close\+Door\+Sensor}} (b2\+World $\ast$world, sf\+::\+Vector2f position, sf\+::\+Vector2f size, float orientation, \mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$door)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_close_door_sensor_a21fb6a2d79ae64c033dea8a3a6e35375}{on\+Action}} (b2\+Body $\ast$other)
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_close_door_sensor_a2c1cbb2fe63642f82f4a9c5126ca642d}{off\+Action}} (b2\+Body $\ast$other)
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit stops. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$ \mbox{\hyperlink{class_close_door_sensor_aed3307dde4ccfbc381b7de72248f665c}{m\+\_\+door}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 6 of file close\+Door\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_close_door_sensor_ade3078af50adefe564b8d3999f7b5e37}\label{class_close_door_sensor_ade3078af50adefe564b8d3999f7b5e37}} 
+\index{CloseDoorSensor@{CloseDoorSensor}!CloseDoorSensor@{CloseDoorSensor}}
+\index{CloseDoorSensor@{CloseDoorSensor}!CloseDoorSensor@{CloseDoorSensor}}
+\doxysubsubsection{\texorpdfstring{CloseDoorSensor()}{CloseDoorSensor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Close\+Door\+Sensor\+::\+Close\+Door\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 11 of file close\+Door\+Sensor.\+h.
+
+\mbox{\Hypertarget{class_close_door_sensor_a0c562ed837b394cd23bfbdf78bdff175}\label{class_close_door_sensor_a0c562ed837b394cd23bfbdf78bdff175}} 
+\index{CloseDoorSensor@{CloseDoorSensor}!CloseDoorSensor@{CloseDoorSensor}}
+\index{CloseDoorSensor@{CloseDoorSensor}!CloseDoorSensor@{CloseDoorSensor}}
+\doxysubsubsection{\texorpdfstring{CloseDoorSensor()}{CloseDoorSensor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Close\+Door\+Sensor\+::\+Close\+Door\+Sensor (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{float}]{orientation,  }\item[{\mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$}]{door }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+
+Definition at line 5 of file close\+Door\+Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_close_door_sensor_a2c1cbb2fe63642f82f4a9c5126ca642d}\label{class_close_door_sensor_a2c1cbb2fe63642f82f4a9c5126ca642d}} 
+\index{CloseDoorSensor@{CloseDoorSensor}!offAction@{offAction}}
+\index{offAction@{offAction}!CloseDoorSensor@{CloseDoorSensor}}
+\doxysubsubsection{\texorpdfstring{offAction()}{offAction()}}
+{\footnotesize\ttfamily void Close\+Door\+Sensor\+::off\+Action (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Thing the sensor does when hit stops. 
+
+
+
+Implements \mbox{\hyperlink{class_static_sensor_a866476fe632f85b01c2870a77ff69754}{Static\+Sensor}}.
+
+
+
+Definition at line 14 of file close\+Door\+Sensor.\+h.
+
+\mbox{\Hypertarget{class_close_door_sensor_a21fb6a2d79ae64c033dea8a3a6e35375}\label{class_close_door_sensor_a21fb6a2d79ae64c033dea8a3a6e35375}} 
+\index{CloseDoorSensor@{CloseDoorSensor}!onAction@{onAction}}
+\index{onAction@{onAction}!CloseDoorSensor@{CloseDoorSensor}}
+\doxysubsubsection{\texorpdfstring{onAction()}{onAction()}}
+{\footnotesize\ttfamily void Close\+Door\+Sensor\+::on\+Action (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Thing the sensor does when hit. 
+
+
+
+Implements \mbox{\hyperlink{class_static_sensor_a6aaa34a63bba2633315143a275fca6fd}{Static\+Sensor}}.
+
+
+
+Definition at line 12 of file close\+Door\+Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_close_door_sensor_aed3307dde4ccfbc381b7de72248f665c}\label{class_close_door_sensor_aed3307dde4ccfbc381b7de72248f665c}} 
+\index{CloseDoorSensor@{CloseDoorSensor}!m\_door@{m\_door}}
+\index{m\_door@{m\_door}!CloseDoorSensor@{CloseDoorSensor}}
+\doxysubsubsection{\texorpdfstring{m\_door}{m\_door}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sliding_door}{Sliding\+Door}}$\ast$ Close\+Door\+Sensor\+::m\+\_\+door}
+
+
+
+Definition at line 15 of file close\+Door\+Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/include/\mbox{\hyperlink{close_door_sensor_8h}{close\+Door\+Sensor.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/src/\mbox{\hyperlink{close_door_sensor_8cpp}{close\+Door\+Sensor.\+cpp}}\end{DoxyCompactItemize}

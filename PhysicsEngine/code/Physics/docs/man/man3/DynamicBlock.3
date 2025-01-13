@@ -1,0 +1,51 @@
+.TH "DynamicBlock" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DynamicBlock \- A simple block which can move, rotate and collide with stuff\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dynamicBlock\&.h>\fP
+.PP
+Inherits sf::RectangleShape, and \fBPhysicalThing\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDynamicBlock\fP (b2World *world, const sf::Vector2f &position, const sf::Vector2f &size, const float orientation)"
+.br
+.RI "Complete contructor\&. "
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.RI "Update rendering infomation\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A simple block which can move, rotate and collide with stuff\&. 
+.PP
+Definition at line 16 of file dynamicBlock\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DynamicBlock::DynamicBlock (b2World * world, const sf::Vector2f & position, const sf::Vector2f & size, const float orientation)"
+
+.PP
+Complete contructor\&. 
+.PP
+Definition at line 7 of file dynamicBlock\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void DynamicBlock::update ()"
+
+.PP
+Update rendering infomation\&. 
+.PP
+Definition at line 38 of file dynamicBlock\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

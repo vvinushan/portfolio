@@ -1,0 +1,93 @@
+\hypertarget{class_static_sensor}{}\doxysection{Static\+Sensor Class Reference}
+\label{class_static_sensor}\index{StaticSensor@{StaticSensor}}
+
+
+A simple block which can not move or rotate and does not coliide with circles.  
+
+
+
+
+{\ttfamily \#include $<$static\+Sensor.\+h$>$}
+
+Inheritance diagram for Static\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_static_sensor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_static_sensor_aa738e7113dfdda15f0e8d6dd3468932f}{init\+Rectangle}} (b2\+World $\ast$world, sf\+::\+Vector2f position, sf\+::\+Vector2f size, float orientation)
+\item 
+void \mbox{\hyperlink{class_static_sensor_a75c1caa2d1690fafb59017af3f58ea4c}{init\+Circle}} (b2\+World $\ast$world, sf\+::\+Vector2f position, float radius)
+\item 
+virtual void \mbox{\hyperlink{class_static_sensor_a6aaa34a63bba2633315143a275fca6fd}{on\+Action}} (b2\+Body $\ast$other)=0
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_static_sensor_a866476fe632f85b01c2870a77ff69754}{off\+Action}} (b2\+Body $\ast$other)=0
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit stops. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A simple block which can not move or rotate and does not coliide with circles. 
+
+Definition at line 19 of file static\+Sensor.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_static_sensor_a75c1caa2d1690fafb59017af3f58ea4c}\label{class_static_sensor_a75c1caa2d1690fafb59017af3f58ea4c}} 
+\index{StaticSensor@{StaticSensor}!initCircle@{initCircle}}
+\index{initCircle@{initCircle}!StaticSensor@{StaticSensor}}
+\doxysubsubsection{\texorpdfstring{initCircle()}{initCircle()}}
+{\footnotesize\ttfamily void Static\+Sensor\+::init\+Circle (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file static\+Sensor.\+cpp.
+
+\mbox{\Hypertarget{class_static_sensor_aa738e7113dfdda15f0e8d6dd3468932f}\label{class_static_sensor_aa738e7113dfdda15f0e8d6dd3468932f}} 
+\index{StaticSensor@{StaticSensor}!initRectangle@{initRectangle}}
+\index{initRectangle@{initRectangle}!StaticSensor@{StaticSensor}}
+\doxysubsubsection{\texorpdfstring{initRectangle()}{initRectangle()}}
+{\footnotesize\ttfamily void Static\+Sensor\+::init\+Rectangle (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{float}]{orientation }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file static\+Sensor.\+cpp.
+
+\mbox{\Hypertarget{class_static_sensor_a866476fe632f85b01c2870a77ff69754}\label{class_static_sensor_a866476fe632f85b01c2870a77ff69754}} 
+\index{StaticSensor@{StaticSensor}!offAction@{offAction}}
+\index{offAction@{offAction}!StaticSensor@{StaticSensor}}
+\doxysubsubsection{\texorpdfstring{offAction()}{offAction()}}
+{\footnotesize\ttfamily virtual void Static\+Sensor\+::off\+Action (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Thing the sensor does when hit stops. 
+
+
+
+Implemented in \mbox{\hyperlink{class_open_door_sensor_a2a2bbbfd8860223b529c9f2e9f8e4c59}{Open\+Door\+Sensor}}, \mbox{\hyperlink{classdoor_pressure_sensor_afd15e7fed7eca89c4a20d7add359af14}{door\+Pressure\+Sensor}}, and \mbox{\hyperlink{class_close_door_sensor_a2c1cbb2fe63642f82f4a9c5126ca642d}{Close\+Door\+Sensor}}.
+
+\mbox{\Hypertarget{class_static_sensor_a6aaa34a63bba2633315143a275fca6fd}\label{class_static_sensor_a6aaa34a63bba2633315143a275fca6fd}} 
+\index{StaticSensor@{StaticSensor}!onAction@{onAction}}
+\index{onAction@{onAction}!StaticSensor@{StaticSensor}}
+\doxysubsubsection{\texorpdfstring{onAction()}{onAction()}}
+{\footnotesize\ttfamily virtual void Static\+Sensor\+::on\+Action (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Thing the sensor does when hit. 
+
+
+
+Implemented in \mbox{\hyperlink{class_open_door_sensor_ac3ffd3b11d0dff76090e630c8fd60dc0}{Open\+Door\+Sensor}}, \mbox{\hyperlink{classdoor_pressure_sensor_a0922dc5cdcf8a23a9d5065d3a9cd5cbc}{door\+Pressure\+Sensor}}, and \mbox{\hyperlink{class_close_door_sensor_a21fb6a2d79ae64c033dea8a3a6e35375}{Close\+Door\+Sensor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/include/\mbox{\hyperlink{static_sensor_8h}{static\+Sensor.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/src/\mbox{\hyperlink{static_sensor_8cpp}{static\+Sensor.\+cpp}}\end{DoxyCompactItemize}

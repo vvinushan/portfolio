@@ -1,0 +1,81 @@
+.TH "PhysicalThing" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PhysicalThing \- A simple class with common attributes and a few const values used in a few places\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <physicalThing\&.h>\fP
+.PP
+Inherited by \fBDynamicBlock\fP, \fBDynamicCircle\fP, \fBDynamicPendulum\fP, \fBRotatingDoor\fP, \fBSlidingDoor\fP, \fBStaticBlock\fP, and \fBStaticSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetUserData\fP (void *data)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2Body * \fBm_body\fP = nullptr"
+.br
+.RI "Box2D body, no need to delete this as BOX2D will look after it\&. "
+.ti -1c
+.RI "float \fBmk_fDensity\fP = 1\&.0f"
+.br
+.RI "Density of the material - used to give mass\&. "
+.ti -1c
+.RI "float \fBmk_fFriction\fP = 0\&.1f"
+.br
+.RI "Friction - I guess this is only friction from movement, not when static\&. "
+.ti -1c
+.RI "float \fBmk_fRestitution\fP = 0\&.8f"
+.br
+.RI "Restitution - bouncyness of stuff\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A simple class with common attributes and a few const values used in a few places\&. 
+.PP
+Definition at line 16 of file physicalThing\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void PhysicalThing::setUserData (void * data)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file physicalThing\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Body* PhysicalThing::m_body = nullptr\fC [protected]\fP"
+
+.PP
+Box2D body, no need to delete this as BOX2D will look after it\&. 
+.PP
+Definition at line 18 of file physicalThing\&.h\&.
+.SS "float PhysicalThing::mk_fDensity = 1\&.0f\fC [protected]\fP"
+
+.PP
+Density of the material - used to give mass\&. 
+.PP
+Definition at line 19 of file physicalThing\&.h\&.
+.SS "float PhysicalThing::mk_fFriction = 0\&.1f\fC [protected]\fP"
+
+.PP
+Friction - I guess this is only friction from movement, not when static\&. 
+.PP
+Definition at line 20 of file physicalThing\&.h\&.
+.SS "float PhysicalThing::mk_fRestitution = 0\&.8f\fC [protected]\fP"
+
+.PP
+Restitution - bouncyness of stuff\&. 
+.PP
+Definition at line 21 of file physicalThing\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

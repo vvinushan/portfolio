@@ -1,0 +1,80 @@
+.TH "Game" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game \- Holds all information about the game, blocks, balls etc and allows updating and rendering\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <game\&.h>\fP
+.PP
+Inherits sf::Drawable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGame\fP ()"
+.br
+.RI "Constructor which sets up the game\&. "
+.ti -1c
+.RI "\fB~Game\fP ()"
+.br
+.RI "Destructor which cleans all the pointer memory up\&. "
+.ti -1c
+.RI "void \fBupdate\fP (float timestep)"
+.br
+.RI "Update the game with give timestep\&. "
+.ti -1c
+.RI "void \fBdraw\fP (sf::RenderTarget &target, sf::RenderStates states) const"
+.br
+.RI "Draw the game to the render context\&. "
+.ti -1c
+.RI "void \fBprocessKeyPress\fP (sf::Keyboard::Key code)"
+.br
+.RI "Process user key press\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Holds all information about the game, blocks, balls etc and allows updating and rendering\&. 
+.PP
+Definition at line 31 of file game\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Game ()"
+
+.PP
+Constructor which sets up the game\&. 
+.PP
+Definition at line 6 of file game\&.cpp\&.
+.SS "Game::~Game ()"
+
+.PP
+Destructor which cleans all the pointer memory up\&. 
+.PP
+Definition at line 50 of file game\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Game::draw (sf::RenderTarget & target, sf::RenderStates states) const"
+
+.PP
+Draw the game to the render context\&. 
+.PP
+Definition at line 93 of file game\&.cpp\&.
+.SS "void Game::processKeyPress (sf::Keyboard::Key code)"
+
+.PP
+Process user key press\&. 
+.PP
+Definition at line 129 of file game\&.cpp\&.
+.SS "void Game::update (float timestep)"
+
+.PP
+Update the game with give timestep\&. 
+.PP
+Definition at line 57 of file game\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

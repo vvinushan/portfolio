@@ -1,0 +1,148 @@
+\hypertarget{class_dynamic_circle}{}\doxysection{Dynamic\+Circle Class Reference}
+\label{class_dynamic_circle}\index{DynamicCircle@{DynamicCircle}}
+
+
+A simple circle which can move, rotate and collide with stuff.  
+
+
+
+
+{\ttfamily \#include $<$dynamic\+Circle.\+h$>$}
+
+Inheritance diagram for Dynamic\+Circle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dynamic_circle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dynamic_circle_a88cc0b444b41ac7c9097a4d439e0ee24}{Dynamic\+Circle}} ()
+\item 
+\mbox{\hyperlink{class_dynamic_circle_a3220edec8476436a0bd6c454d2cda546}{Dynamic\+Circle}} (b2\+World $\ast$world, const sf\+::\+Vector2f \&position, const float radius, const float orientation)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dynamic_circle_a7ecfe80184c7ed16d23283108ade111f}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update rendering infomation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dynamic_circle_af8656c4fc016a5093fb107c91843ed0c}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Overridden drawing methos to include line to allow users to see oreintation of the ball. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dynamic_circle_aae55e6dec64316139cc0bed1b2af932f}{apply\+Impulse}} (b2\+Vec2 impulse)
+\begin{DoxyCompactList}\small\item\em Apply impulse to the body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dynamic_circle_a7475a71362ed6130776c5f2faaa28da9}{accel}} (b2\+Vec2 acc)
+\begin{DoxyCompactList}\small\item\em Apply force to the body. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dynamic_circle_a8e89d5bfe97c5d495bfccb6ed478d2f3}{is\+Stopped}} () const
+\begin{DoxyCompactList}\small\item\em Has the circle stopped moving. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A simple circle which can move, rotate and collide with stuff. 
+
+Definition at line 16 of file dynamic\+Circle.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dynamic_circle_a88cc0b444b41ac7c9097a4d439e0ee24}\label{class_dynamic_circle_a88cc0b444b41ac7c9097a4d439e0ee24}} 
+\index{DynamicCircle@{DynamicCircle}!DynamicCircle@{DynamicCircle}}
+\index{DynamicCircle@{DynamicCircle}!DynamicCircle@{DynamicCircle}}
+\doxysubsubsection{\texorpdfstring{DynamicCircle()}{DynamicCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Dynamic\+Circle\+::\+Dynamic\+Circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file dynamic\+Circle.\+h.
+
+\mbox{\Hypertarget{class_dynamic_circle_a3220edec8476436a0bd6c454d2cda546}\label{class_dynamic_circle_a3220edec8476436a0bd6c454d2cda546}} 
+\index{DynamicCircle@{DynamicCircle}!DynamicCircle@{DynamicCircle}}
+\index{DynamicCircle@{DynamicCircle}!DynamicCircle@{DynamicCircle}}
+\doxysubsubsection{\texorpdfstring{DynamicCircle()}{DynamicCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Dynamic\+Circle\+::\+Dynamic\+Circle (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{const sf\+::\+Vector2f \&}]{position,  }\item[{const float}]{radius,  }\item[{const float}]{orientation }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Complete contructor 
+
+Definition at line 8 of file dynamic\+Circle.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dynamic_circle_a7475a71362ed6130776c5f2faaa28da9}\label{class_dynamic_circle_a7475a71362ed6130776c5f2faaa28da9}} 
+\index{DynamicCircle@{DynamicCircle}!accel@{accel}}
+\index{accel@{accel}!DynamicCircle@{DynamicCircle}}
+\doxysubsubsection{\texorpdfstring{accel()}{accel()}}
+{\footnotesize\ttfamily void Dynamic\+Circle\+::accel (\begin{DoxyParamCaption}\item[{b2\+Vec2}]{acc }\end{DoxyParamCaption})}
+
+
+
+Apply force to the body. 
+
+
+
+Definition at line 74 of file dynamic\+Circle.\+cpp.
+
+\mbox{\Hypertarget{class_dynamic_circle_aae55e6dec64316139cc0bed1b2af932f}\label{class_dynamic_circle_aae55e6dec64316139cc0bed1b2af932f}} 
+\index{DynamicCircle@{DynamicCircle}!applyImpulse@{applyImpulse}}
+\index{applyImpulse@{applyImpulse}!DynamicCircle@{DynamicCircle}}
+\doxysubsubsection{\texorpdfstring{applyImpulse()}{applyImpulse()}}
+{\footnotesize\ttfamily void Dynamic\+Circle\+::apply\+Impulse (\begin{DoxyParamCaption}\item[{b2\+Vec2}]{impulse }\end{DoxyParamCaption})}
+
+
+
+Apply impulse to the body. 
+
+
+
+Definition at line 69 of file dynamic\+Circle.\+cpp.
+
+\mbox{\Hypertarget{class_dynamic_circle_af8656c4fc016a5093fb107c91843ed0c}\label{class_dynamic_circle_af8656c4fc016a5093fb107c91843ed0c}} 
+\index{DynamicCircle@{DynamicCircle}!draw@{draw}}
+\index{draw@{draw}!DynamicCircle@{DynamicCircle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Dynamic\+Circle\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const}
+
+
+
+Overridden drawing methos to include line to allow users to see oreintation of the ball. 
+
+
+
+Definition at line 57 of file dynamic\+Circle.\+cpp.
+
+\mbox{\Hypertarget{class_dynamic_circle_a8e89d5bfe97c5d495bfccb6ed478d2f3}\label{class_dynamic_circle_a8e89d5bfe97c5d495bfccb6ed478d2f3}} 
+\index{DynamicCircle@{DynamicCircle}!isStopped@{isStopped}}
+\index{isStopped@{isStopped}!DynamicCircle@{DynamicCircle}}
+\doxysubsubsection{\texorpdfstring{isStopped()}{isStopped()}}
+{\footnotesize\ttfamily bool Dynamic\+Circle\+::is\+Stopped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Has the circle stopped moving. 
+
+
+
+Definition at line 79 of file dynamic\+Circle.\+cpp.
+
+\mbox{\Hypertarget{class_dynamic_circle_a7ecfe80184c7ed16d23283108ade111f}\label{class_dynamic_circle_a7ecfe80184c7ed16d23283108ade111f}} 
+\index{DynamicCircle@{DynamicCircle}!update@{update}}
+\index{update@{update}!DynamicCircle@{DynamicCircle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Dynamic\+Circle\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update rendering infomation. 
+
+
+
+Definition at line 40 of file dynamic\+Circle.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/include/\mbox{\hyperlink{dynamic_circle_8h}{dynamic\+Circle.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/src/\mbox{\hyperlink{dynamic_circle_8cpp}{dynamic\+Circle.\+cpp}}\end{DoxyCompactItemize}

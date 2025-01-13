@@ -1,0 +1,121 @@
+\hypertarget{classdoor_pressure_sensor}{}\doxysection{door\+Pressure\+Sensor Class Reference}
+\label{classdoor_pressure_sensor}\index{doorPressureSensor@{doorPressureSensor}}
+
+
+{\ttfamily \#include $<$door\+Pressure\+Sensor.\+h$>$}
+
+Inheritance diagram for door\+Pressure\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classdoor_pressure_sensor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdoor_pressure_sensor_a2e740089b04afd50a16afc52b33c8a05}{door\+Pressure\+Sensor}} ()
+\item 
+\mbox{\hyperlink{classdoor_pressure_sensor_aff88153a666b8936db83032c552cf84a}{door\+Pressure\+Sensor}} (b2\+World $\ast$world, sf\+::\+Vector2f position, sf\+::\+Vector2f size, float orientation, \mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$door)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdoor_pressure_sensor_a0922dc5cdcf8a23a9d5065d3a9cd5cbc}{on\+Action}} (b2\+Body $\ast$other)
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdoor_pressure_sensor_afd15e7fed7eca89c4a20d7add359af14}{off\+Action}} (b2\+Body $\ast$other)
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit stops. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$ \mbox{\hyperlink{classdoor_pressure_sensor_a4d2f2bc44a52b3dc59d59e754717270e}{m\+\_\+door}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file door\+Pressure\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdoor_pressure_sensor_a2e740089b04afd50a16afc52b33c8a05}\label{classdoor_pressure_sensor_a2e740089b04afd50a16afc52b33c8a05}} 
+\index{doorPressureSensor@{doorPressureSensor}!doorPressureSensor@{doorPressureSensor}}
+\index{doorPressureSensor@{doorPressureSensor}!doorPressureSensor@{doorPressureSensor}}
+\doxysubsubsection{\texorpdfstring{doorPressureSensor()}{doorPressureSensor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily door\+Pressure\+Sensor\+::door\+Pressure\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 13 of file door\+Pressure\+Sensor.\+h.
+
+\mbox{\Hypertarget{classdoor_pressure_sensor_aff88153a666b8936db83032c552cf84a}\label{classdoor_pressure_sensor_aff88153a666b8936db83032c552cf84a}} 
+\index{doorPressureSensor@{doorPressureSensor}!doorPressureSensor@{doorPressureSensor}}
+\index{doorPressureSensor@{doorPressureSensor}!doorPressureSensor@{doorPressureSensor}}
+\doxysubsubsection{\texorpdfstring{doorPressureSensor()}{doorPressureSensor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily door\+Pressure\+Sensor\+::door\+Pressure\+Sensor (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{float}]{orientation,  }\item[{\mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$}]{door }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+
+Definition at line 3 of file door\+Pressure\+Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdoor_pressure_sensor_afd15e7fed7eca89c4a20d7add359af14}\label{classdoor_pressure_sensor_afd15e7fed7eca89c4a20d7add359af14}} 
+\index{doorPressureSensor@{doorPressureSensor}!offAction@{offAction}}
+\index{offAction@{offAction}!doorPressureSensor@{doorPressureSensor}}
+\doxysubsubsection{\texorpdfstring{offAction()}{offAction()}}
+{\footnotesize\ttfamily void door\+Pressure\+Sensor\+::off\+Action (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Thing the sensor does when hit stops. 
+
+
+
+Implements \mbox{\hyperlink{class_static_sensor_a866476fe632f85b01c2870a77ff69754}{Static\+Sensor}}.
+
+
+
+Definition at line 16 of file door\+Pressure\+Sensor.\+cpp.
+
+\mbox{\Hypertarget{classdoor_pressure_sensor_a0922dc5cdcf8a23a9d5065d3a9cd5cbc}\label{classdoor_pressure_sensor_a0922dc5cdcf8a23a9d5065d3a9cd5cbc}} 
+\index{doorPressureSensor@{doorPressureSensor}!onAction@{onAction}}
+\index{onAction@{onAction}!doorPressureSensor@{doorPressureSensor}}
+\doxysubsubsection{\texorpdfstring{onAction()}{onAction()}}
+{\footnotesize\ttfamily void door\+Pressure\+Sensor\+::on\+Action (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Thing the sensor does when hit. 
+
+
+
+Implements \mbox{\hyperlink{class_static_sensor_a6aaa34a63bba2633315143a275fca6fd}{Static\+Sensor}}.
+
+
+
+Definition at line 10 of file door\+Pressure\+Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classdoor_pressure_sensor_a4d2f2bc44a52b3dc59d59e754717270e}\label{classdoor_pressure_sensor_a4d2f2bc44a52b3dc59d59e754717270e}} 
+\index{doorPressureSensor@{doorPressureSensor}!m\_door@{m\_door}}
+\index{m\_door@{m\_door}!doorPressureSensor@{doorPressureSensor}}
+\doxysubsubsection{\texorpdfstring{m\_door}{m\_door}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sliding_door}{Sliding\+Door}}$\ast$ door\+Pressure\+Sensor\+::m\+\_\+door}
+
+
+
+Definition at line 17 of file door\+Pressure\+Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/include/\mbox{\hyperlink{door_pressure_sensor_8h}{door\+Pressure\+Sensor.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/src/\mbox{\hyperlink{door_pressure_sensor_8cpp}{door\+Pressure\+Sensor.\+cpp}}\end{DoxyCompactItemize}

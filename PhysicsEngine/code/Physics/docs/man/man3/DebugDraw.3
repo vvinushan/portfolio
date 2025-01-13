@@ -1,0 +1,112 @@
+.TH "DebugDraw" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DebugDraw
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SFMLDebugDraw\&.h>\fP
+.PP
+Inherits b2Draw\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDrawPoint\fP (const b2Vec2 &p, float32 size, const b2Color &color)"
+.br
+.RI "Draw a point (dot) "
+.ti -1c
+.RI "void \fBDrawSolidPolygon\fP (const b2Vec2 *vertices, int32 vertexCount, const b2Color &color)"
+.br
+.RI "Draw a filled polygon\&. "
+.ti -1c
+.RI "void \fBDrawPolygon\fP (const b2Vec2 *vertices, int32 vertexCount, const b2Color &color)"
+.br
+.RI "Draw the outline of a polygon\&. "
+.ti -1c
+.RI "void \fBDrawCircle\fP (const b2Vec2 &center, float32 radius, const b2Color &color)"
+.br
+.RI "Draw a circle outline\&. "
+.ti -1c
+.RI "void \fBDrawSolidCircle\fP (const b2Vec2 &center, float32 radius, const b2Vec2 &axis, const b2Color &color)"
+.br
+.RI "Draw a filled circle with axis\&. "
+.ti -1c
+.RI "void \fBDrawSegment\fP (const b2Vec2 &p1, const b2Vec2 &p2, const b2Color &color)"
+.br
+.RI "Draw line segment\&. "
+.ti -1c
+.RI "void \fBDrawTransform\fP (const b2Transform &xf)"
+.br
+.RI "Drawa transform - not implemented\&. "
+.ti -1c
+.RI "std::vector< sf::VertexArray > \fBgetShapes\fP () const"
+.br
+.ti -1c
+.RI "void \fBclearShapes\fP ()"
+.br
+.RI "Return the shapes to be drawn\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file SFMLDebugDraw\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void DebugDraw::clearShapes ()\fC [inline]\fP"
+
+.PP
+Return the shapes to be drawn\&. 
+.PP
+Definition at line 19 of file SFMLDebugDraw\&.h\&.
+.SS "void DebugDraw::DrawCircle (const b2Vec2 & center, float32 radius, const b2Color & color)"
+
+.PP
+Draw a circle outline\&. 
+.PP
+Definition at line 46 of file SFMLDebugDraw\&.cpp\&.
+.SS "void DebugDraw::DrawPoint (const b2Vec2 & p, float32 size, const b2Color & color)"
+
+.PP
+Draw a point (dot) 
+.PP
+Definition at line 19 of file SFMLDebugDraw\&.cpp\&.
+.SS "void DebugDraw::DrawPolygon (const b2Vec2 * vertices, int32 vertexCount, const b2Color & color)"
+
+.PP
+Draw the outline of a polygon\&. 
+.PP
+Definition at line 35 of file SFMLDebugDraw\&.cpp\&.
+.SS "void DebugDraw::DrawSegment (const b2Vec2 & p1, const b2Vec2 & p2, const b2Color & color)"
+
+.PP
+Draw line segment\&. 
+.PP
+Definition at line 88 of file SFMLDebugDraw\&.cpp\&.
+.SS "void DebugDraw::DrawSolidCircle (const b2Vec2 & center, float32 radius, const b2Vec2 & axis, const b2Color & color)"
+
+.PP
+Draw a filled circle with axis\&. 
+.PP
+Definition at line 63 of file SFMLDebugDraw\&.cpp\&.
+.SS "void DebugDraw::DrawSolidPolygon (const b2Vec2 * vertices, int32 vertexCount, const b2Color & color)"
+
+.PP
+Draw a filled polygon\&. 
+.PP
+Definition at line 25 of file SFMLDebugDraw\&.cpp\&.
+.SS "void DebugDraw::DrawTransform (const b2Transform & xf)"
+
+.PP
+Drawa transform - not implemented\&. 
+.PP
+Definition at line 95 of file SFMLDebugDraw\&.cpp\&.
+.SS "std::vector<sf::VertexArray> DebugDraw::getShapes () const\fC [inline]\fP"
+
+.PP
+Definition at line 18 of file SFMLDebugDraw\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

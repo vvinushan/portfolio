@@ -1,0 +1,48 @@
+.TH "SensorContactListener" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SensorContactListener \- A listener which listens for contacts between games objects and sensors\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SensorContactListener\&.h>\fP
+.PP
+Inherits b2ContactListener\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBeginContact\fP (b2Contact *contact)"
+.br
+.RI "Called when two fixtures begin to touch\&. "
+.ti -1c
+.RI "void \fBEndContact\fP (b2Contact *contact)"
+.br
+.RI "Called when two fixtures cease to touch\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A listener which listens for contacts between games objects and sensors\&. 
+.PP
+Definition at line 18 of file SensorContactListener\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void SensorContactListener::BeginContact (b2Contact * contact)"
+
+.PP
+Called when two fixtures begin to touch\&. 
+.PP
+Definition at line 3 of file SensorContactListener\&.cpp\&.
+.SS "void SensorContactListener::EndContact (b2Contact * contact)"
+
+.PP
+Called when two fixtures cease to touch\&. 
+.PP
+Definition at line 28 of file SensorContactListener\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

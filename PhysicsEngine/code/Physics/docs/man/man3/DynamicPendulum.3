@@ -1,0 +1,69 @@
+.TH "DynamicPendulum" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DynamicPendulum
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dynamicPendulum\&.h>\fP
+.PP
+Inherits \fBPhysicalThing\fP, and sf::Drawable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDynamicPendulum\fP ()"
+.br
+.ti -1c
+.RI "\fBDynamicPendulum\fP (b2World *world, sf::Vector2f position, sf::Vector2f size, sf::Vector2f anchor, float orientation, sf::Color colour)"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "\fBDynamicPendulum\fP (b2World *world, sf::Vector2f position, sf::Vector2f size, sf::Vector2f anchor, float orientation, sf::Texture *tex)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (sf::RenderTarget &render, sf::RenderStates states) const"
+.br
+.RI "Draw shape\&. "
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file dynamicPendulum\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DynamicPendulum::DynamicPendulum ()\fC [inline]\fP"
+
+.PP
+Definition at line 14 of file dynamicPendulum\&.h\&.
+.SS "DynamicPendulum::DynamicPendulum (b2World * world, sf::Vector2f position, sf::Vector2f size, sf::Vector2f anchor, float orientation, sf::Color colour)"
+
+.PP
+Default constructor\&. 
+.PP
+Definition at line 3 of file dynamicPendulum\&.cpp\&.
+.SS "DynamicPendulum::DynamicPendulum (b2World * world, sf::Vector2f position, sf::Vector2f size, sf::Vector2f anchor, float orientation, sf::Texture * tex)"
+
+.PP
+Definition at line 50 of file dynamicPendulum\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void DynamicPendulum::draw (sf::RenderTarget & render, sf::RenderStates states) const"
+
+.PP
+Draw shape\&. 
+.PP
+Definition at line 54 of file dynamicPendulum\&.cpp\&.
+.SS "void DynamicPendulum::update ()"
+
+.PP
+Definition at line 59 of file dynamicPendulum\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

@@ -1,0 +1,82 @@
+.TH "OpenDoorSensor" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenDoorSensor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <openDoorSensor\&.h>\fP
+.PP
+Inherits \fBStaticSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOpenDoorSensor\fP ()"
+.br
+.ti -1c
+.RI "\fBOpenDoorSensor\fP (b2World *world, sf::Vector2f position, sf::Vector2f size, float orientation, \fBSlidingDoor\fP *door)"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "void \fBonAction\fP (b2Body *other)"
+.br
+.RI "Thing the sensor does when hit\&. "
+.ti -1c
+.RI "void \fBoffAction\fP (b2Body *other)"
+.br
+.RI "Thing the sensor does when hit stops\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSlidingDoor\fP * \fBm_door\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file openDoorSensor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenDoorSensor::OpenDoorSensor ()\fC [inline]\fP"
+
+.PP
+Definition at line 11 of file openDoorSensor\&.h\&.
+.SS "OpenDoorSensor::OpenDoorSensor (b2World * world, sf::Vector2f position, sf::Vector2f size, float orientation, \fBSlidingDoor\fP * door)"
+
+.PP
+Default constructor\&. 
+.PP
+Definition at line 5 of file openDoorSensor\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OpenDoorSensor::offAction (b2Body * other)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Thing the sensor does when hit stops\&. 
+.PP
+Implements \fBStaticSensor\fP\&.
+.PP
+Definition at line 14 of file openDoorSensor\&.h\&.
+.SS "void OpenDoorSensor::onAction (b2Body * other)\fC [virtual]\fP"
+
+.PP
+Thing the sensor does when hit\&. 
+.PP
+Implements \fBStaticSensor\fP\&.
+.PP
+Definition at line 12 of file openDoorSensor\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBSlidingDoor\fP* OpenDoorSensor::m_door"
+
+.PP
+Definition at line 15 of file openDoorSensor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

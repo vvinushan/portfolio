@@ -1,0 +1,82 @@
+.TH "CloseDoorSensor" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CloseDoorSensor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <closeDoorSensor\&.h>\fP
+.PP
+Inherits \fBStaticSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCloseDoorSensor\fP ()"
+.br
+.ti -1c
+.RI "\fBCloseDoorSensor\fP (b2World *world, sf::Vector2f position, sf::Vector2f size, float orientation, \fBSlidingDoor\fP *door)"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "void \fBonAction\fP (b2Body *other)"
+.br
+.RI "Thing the sensor does when hit\&. "
+.ti -1c
+.RI "void \fBoffAction\fP (b2Body *other)"
+.br
+.RI "Thing the sensor does when hit stops\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSlidingDoor\fP * \fBm_door\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file closeDoorSensor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CloseDoorSensor::CloseDoorSensor ()\fC [inline]\fP"
+
+.PP
+Definition at line 11 of file closeDoorSensor\&.h\&.
+.SS "CloseDoorSensor::CloseDoorSensor (b2World * world, sf::Vector2f position, sf::Vector2f size, float orientation, \fBSlidingDoor\fP * door)"
+
+.PP
+Default constructor\&. 
+.PP
+Definition at line 5 of file closeDoorSensor\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void CloseDoorSensor::offAction (b2Body * other)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Thing the sensor does when hit stops\&. 
+.PP
+Implements \fBStaticSensor\fP\&.
+.PP
+Definition at line 14 of file closeDoorSensor\&.h\&.
+.SS "void CloseDoorSensor::onAction (b2Body * other)\fC [virtual]\fP"
+
+.PP
+Thing the sensor does when hit\&. 
+.PP
+Implements \fBStaticSensor\fP\&.
+.PP
+Definition at line 12 of file closeDoorSensor\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBSlidingDoor\fP* CloseDoorSensor::m_door"
+
+.PP
+Definition at line 15 of file closeDoorSensor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.

@@ -1,0 +1,121 @@
+\hypertarget{class_open_door_sensor}{}\doxysection{Open\+Door\+Sensor Class Reference}
+\label{class_open_door_sensor}\index{OpenDoorSensor@{OpenDoorSensor}}
+
+
+{\ttfamily \#include $<$open\+Door\+Sensor.\+h$>$}
+
+Inheritance diagram for Open\+Door\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_open_door_sensor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_open_door_sensor_a47489be4457a6b728f5737899c80350e}{Open\+Door\+Sensor}} ()
+\item 
+\mbox{\hyperlink{class_open_door_sensor_aace0d17048ebb23550bc22efe2648d7b}{Open\+Door\+Sensor}} (b2\+World $\ast$world, sf\+::\+Vector2f position, sf\+::\+Vector2f size, float orientation, \mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$door)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_door_sensor_ac3ffd3b11d0dff76090e630c8fd60dc0}{on\+Action}} (b2\+Body $\ast$other)
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_door_sensor_a2a2bbbfd8860223b529c9f2e9f8e4c59}{off\+Action}} (b2\+Body $\ast$other)
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit stops. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$ \mbox{\hyperlink{class_open_door_sensor_a3da8d8b2506a6f50878339cd3d5bd2dd}{m\+\_\+door}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 6 of file open\+Door\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_open_door_sensor_a47489be4457a6b728f5737899c80350e}\label{class_open_door_sensor_a47489be4457a6b728f5737899c80350e}} 
+\index{OpenDoorSensor@{OpenDoorSensor}!OpenDoorSensor@{OpenDoorSensor}}
+\index{OpenDoorSensor@{OpenDoorSensor}!OpenDoorSensor@{OpenDoorSensor}}
+\doxysubsubsection{\texorpdfstring{OpenDoorSensor()}{OpenDoorSensor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Open\+Door\+Sensor\+::\+Open\+Door\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 11 of file open\+Door\+Sensor.\+h.
+
+\mbox{\Hypertarget{class_open_door_sensor_aace0d17048ebb23550bc22efe2648d7b}\label{class_open_door_sensor_aace0d17048ebb23550bc22efe2648d7b}} 
+\index{OpenDoorSensor@{OpenDoorSensor}!OpenDoorSensor@{OpenDoorSensor}}
+\index{OpenDoorSensor@{OpenDoorSensor}!OpenDoorSensor@{OpenDoorSensor}}
+\doxysubsubsection{\texorpdfstring{OpenDoorSensor()}{OpenDoorSensor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Open\+Door\+Sensor\+::\+Open\+Door\+Sensor (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{float}]{orientation,  }\item[{\mbox{\hyperlink{class_sliding_door}{Sliding\+Door}} $\ast$}]{door }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+
+Definition at line 5 of file open\+Door\+Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_open_door_sensor_a2a2bbbfd8860223b529c9f2e9f8e4c59}\label{class_open_door_sensor_a2a2bbbfd8860223b529c9f2e9f8e4c59}} 
+\index{OpenDoorSensor@{OpenDoorSensor}!offAction@{offAction}}
+\index{offAction@{offAction}!OpenDoorSensor@{OpenDoorSensor}}
+\doxysubsubsection{\texorpdfstring{offAction()}{offAction()}}
+{\footnotesize\ttfamily void Open\+Door\+Sensor\+::off\+Action (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Thing the sensor does when hit stops. 
+
+
+
+Implements \mbox{\hyperlink{class_static_sensor_a866476fe632f85b01c2870a77ff69754}{Static\+Sensor}}.
+
+
+
+Definition at line 14 of file open\+Door\+Sensor.\+h.
+
+\mbox{\Hypertarget{class_open_door_sensor_ac3ffd3b11d0dff76090e630c8fd60dc0}\label{class_open_door_sensor_ac3ffd3b11d0dff76090e630c8fd60dc0}} 
+\index{OpenDoorSensor@{OpenDoorSensor}!onAction@{onAction}}
+\index{onAction@{onAction}!OpenDoorSensor@{OpenDoorSensor}}
+\doxysubsubsection{\texorpdfstring{onAction()}{onAction()}}
+{\footnotesize\ttfamily void Open\+Door\+Sensor\+::on\+Action (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Thing the sensor does when hit. 
+
+
+
+Implements \mbox{\hyperlink{class_static_sensor_a6aaa34a63bba2633315143a275fca6fd}{Static\+Sensor}}.
+
+
+
+Definition at line 12 of file open\+Door\+Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_open_door_sensor_a3da8d8b2506a6f50878339cd3d5bd2dd}\label{class_open_door_sensor_a3da8d8b2506a6f50878339cd3d5bd2dd}} 
+\index{OpenDoorSensor@{OpenDoorSensor}!m\_door@{m\_door}}
+\index{m\_door@{m\_door}!OpenDoorSensor@{OpenDoorSensor}}
+\doxysubsubsection{\texorpdfstring{m\_door}{m\_door}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sliding_door}{Sliding\+Door}}$\ast$ Open\+Door\+Sensor\+::m\+\_\+door}
+
+
+
+Definition at line 15 of file open\+Door\+Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/include/\mbox{\hyperlink{open_door_sensor_8h}{open\+Door\+Sensor.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/src/\mbox{\hyperlink{open_door_sensor_8cpp}{open\+Door\+Sensor.\+cpp}}\end{DoxyCompactItemize}

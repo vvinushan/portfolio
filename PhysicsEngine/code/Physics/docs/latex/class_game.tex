@@ -1,0 +1,119 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Holds all information about the game, blocks, balls etc and allows updating and rendering.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Constructor which sets up the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Destructor which cleans all the pointer memory up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_acc8519c7ced1cf9eb9bbb3a2f325f6a0}{update}} (float timestep)
+\begin{DoxyCompactList}\small\item\em Update the game with give timestep. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a143d1a2f8a527db60f1fe47ab3d854a7}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Draw the game to the render context. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a24cae2e3217f6d0fd0b4fa1493eb24a1}{process\+Key\+Press}} (sf\+::\+Keyboard\+::\+Key code)
+\begin{DoxyCompactList}\small\item\em Process user key press. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds all information about the game, blocks, balls etc and allows updating and rendering. 
+
+Definition at line 31 of file game.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor which sets up the game. 
+
+
+
+Definition at line 6 of file game.\+cpp.
+
+\mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor which cleans all the pointer memory up. 
+
+
+
+Definition at line 50 of file game.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a143d1a2f8a527db60f1fe47ab3d854a7}\label{class_game_a143d1a2f8a527db60f1fe47ab3d854a7}} 
+\index{Game@{Game}!draw@{draw}}
+\index{draw@{draw}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const}
+
+
+
+Draw the game to the render context. 
+
+
+
+Definition at line 93 of file game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a24cae2e3217f6d0fd0b4fa1493eb24a1}\label{class_game_a24cae2e3217f6d0fd0b4fa1493eb24a1}} 
+\index{Game@{Game}!processKeyPress@{processKeyPress}}
+\index{processKeyPress@{processKeyPress}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{processKeyPress()}{processKeyPress()}}
+{\footnotesize\ttfamily void Game\+::process\+Key\+Press (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{code }\end{DoxyParamCaption})}
+
+
+
+Process user key press. 
+
+
+
+Definition at line 129 of file game.\+cpp.
+
+\mbox{\Hypertarget{class_game_acc8519c7ced1cf9eb9bbb3a2f325f6a0}\label{class_game_acc8519c7ced1cf9eb9bbb3a2f325f6a0}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}\item[{float}]{timestep }\end{DoxyParamCaption})}
+
+
+
+Update the game with give timestep. 
+
+
+
+Definition at line 57 of file game.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/include/\mbox{\hyperlink{game_8h}{game.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+University/2nd Year/\+IMAT2912/labcode/\+CW/\+CW1\+\_\+starter/src/\mbox{\hyperlink{game_8cpp}{game.\+cpp}}\end{DoxyCompactItemize}

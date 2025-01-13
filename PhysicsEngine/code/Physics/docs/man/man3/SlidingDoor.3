@@ -1,0 +1,73 @@
+.TH "SlidingDoor" 3 "Fri Apr 30 2021" "Lab Book 3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SlidingDoor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <slidingDoor\&.h>\fP
+.PP
+Inherits sf::Drawable, and \fBPhysicalThing\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSlidingDoor\fP ()"
+.br
+.ti -1c
+.RI "\fBSlidingDoor\fP (b2World *world, sf::Vector2f position, float angle)"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "void \fBupdate\fP (float timestep)"
+.br
+.ti -1c
+.RI "void \fBopen\fP ()"
+.br
+.ti -1c
+.RI "void \fBclose\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (sf::RenderTarget &target, sf::RenderStates states) const"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file slidingDoor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SlidingDoor::SlidingDoor ()\fC [inline]\fP"
+
+.PP
+Definition at line 30 of file slidingDoor\&.h\&.
+.SS "SlidingDoor::SlidingDoor (b2World * world, sf::Vector2f position, float angle)"
+
+.PP
+Default constructor\&. 
+.PP
+Definition at line 3 of file slidingDoor\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void SlidingDoor::close ()"
+
+.PP
+Definition at line 144 of file slidingDoor\&.cpp\&.
+.SS "void SlidingDoor::draw (sf::RenderTarget & target, sf::RenderStates states) const"
+
+.PP
+Definition at line 159 of file slidingDoor\&.cpp\&.
+.SS "void SlidingDoor::open ()"
+
+.PP
+Definition at line 129 of file slidingDoor\&.cpp\&.
+.SS "void SlidingDoor::update (float timestep)"
+
+.PP
+Definition at line 83 of file slidingDoor\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab Book 3 from the source code\&.
