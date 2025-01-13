@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vinus\\Documents\\Careers\\PortfolioA\\portfolio\\UnitTestingDemo\\cw2\\",
+  "WorkspaceRootPath": "C:\\Users\\vinus\\Documents\\Careers\\Code Portfolio\\UnitTestingDemo\\cw2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07C35F5C-CF16-4E07-901B-B2C1F8B798A7}|cw2\\cw2.vcxproj|C:\\Users\\vinus\\Documents\\Careers\\PortfolioA\\portfolio\\UnitTestingDemo\\cw2\\cw2\\calc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{07C35F5C-CF16-4E07-901B-B2C1F8B798A7}|cw2\\cw2.vcxproj|C:\\Users\\vinus\\Documents\\Careers\\Code Portfolio\\UnitTestingDemo\\cw2\\cw2\\calc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{07C35F5C-CF16-4E07-901B-B2C1F8B798A7}|cw2\\cw2.vcxproj|solutionrelative:cw2\\calc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "calc.cpp",
-              "DocumentMoniker": "C:\\Users\\vinus\\Documents\\Careers\\PortfolioA\\portfolio\\UnitTestingDemo\\cw2\\cw2\\calc.cpp",
+              "DocumentMoniker": "C:\\Users\\vinus\\Documents\\Careers\\Code Portfolio\\UnitTestingDemo\\cw2\\cw2\\calc.cpp",
               "RelativeDocumentMoniker": "cw2\\calc.cpp",
-              "ToolTip": "C:\\Users\\vinus\\Documents\\Careers\\PortfolioA\\portfolio\\UnitTestingDemo\\cw2\\cw2\\calc.cpp",
+              "ToolTip": "C:\\Users\\vinus\\Documents\\Careers\\Code Portfolio\\UnitTestingDemo\\cw2\\cw2\\calc.cpp",
               "RelativeToolTip": "cw2\\calc.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
