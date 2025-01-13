@@ -1,0 +1,16 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  pch.cpp
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  values.cpp
+  testingFixtures.cpp
+  test.cpp
+C:\Users\vinus\Documents\Careers\PortfolioA\portfolio\UnitTestingDemo\cw2\cw2\test.cpp(11,2): warning C4002: too many arguments for function-like macro invocation 'ASSERT_TRUE'
+C:\Users\vinus\Documents\Careers\PortfolioA\portfolio\UnitTestingDemo\cw2\cw2\test.cpp(18,2): warning C4002: too many arguments for function-like macro invocation 'EXPECT_TRUE'
+C:\Users\vinus\Documents\Careers\PortfolioA\portfolio\UnitTestingDemo\cw2\cw2\test.cpp(25,2): warning C4002: too many arguments for function-like macro invocation 'ASSERT_FALSE'
+C:\Users\vinus\Documents\Careers\PortfolioA\portfolio\UnitTestingDemo\cw2\cw2\test.cpp(32,2): warning C4002: too many arguments for function-like macro invocation 'EXPECT_FALSE'
+C:\Users\vinus\Documents\Careers\PortfolioA\portfolio\UnitTestingDemo\cw2\cw2\test.cpp(93,3): warning C4002: too many arguments for function-like macro invocation 'EXPECT_TRUE'
+C:\Users\vinus\Documents\Careers\PortfolioA\portfolio\UnitTestingDemo\cw2\cw2\test.cpp(103,3): warning C4002: too many arguments for function-like macro invocation 'ASSERT_TRUE'
+  Main.cpp
+  calc.cpp
+  Generating Code...
+  cw2.vcxproj -> C:\Users\vinus\Documents\Careers\PortfolioA\portfolio\UnitTestingDemo\cw2\Debug\cw2.exe
