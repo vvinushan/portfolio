@@ -1,0 +1,142 @@
+.TH "Fighter" 3 "Double Linked List" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Fighter \- Base class \fBFighter\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Fighter\&.h>\fP
+.PP
+Inherited by \fBEasyNPC\fP, \fBEasyNPC\fP, \fBHardNPC\fP, \fBHardNPC\fP, \fBPlayer\fP, and \fBPlayer\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB~Fighter\fP ()"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "\fBFighter\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "void \fBsetName\fP (std::string \fBfighterName\fP)"
+.br
+.RI "Function to set name of fighter\&. "
+.ti -1c
+.RI "void \fBsetHealth\fP (float \fBhealth\fP)"
+.br
+.RI "Function to set fighter's health\&. "
+.ti -1c
+.RI "virtual float \fBattack\fP ()"
+.br
+.RI "Virtual function to attack, can be overridden by child classes\&. "
+.ti -1c
+.RI "\fB~Fighter\fP ()"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "\fBFighter\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "void \fBsetName\fP (std::string \fBfighterName\fP)"
+.br
+.RI "Function to set name of fighter\&. "
+.ti -1c
+.RI "void \fBsetHealth\fP (float \fBhealth\fP)"
+.br
+.RI "Function to set fighter's health\&. "
+.ti -1c
+.RI "virtual float \fBattack\fP ()"
+.br
+.RI "Virtual function to attack, can be overridden by child classes\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBfighterName\fP"
+.br
+.RI "Variable for name of the fighter\&. "
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.ti -1c
+.RI "float \fBresistance\fP"
+.br
+.RI "Variables for speed and resistance against damage\&. "
+.ti -1c
+.RI "float \fBhealth\fP"
+.br
+.RI "Variable for health of the fighter\&. "
+.ti -1c
+.RI "float \fBdamage\fP"
+.br
+.RI "Variable for damage inflicted to opponent\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Base class \fBFighter\fP\&. 
+
+Base class used to derieve classes for each fighter\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Fighter::Fighter (float speed, float resistance)"
+
+.PP
+Destructor\&. Overloading \fBFighter\fP constructor 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresistance\fP Overloading class constructor 
+.RE
+.PP
+
+.SS "Fighter::Fighter (float speed, float resistance)"
+
+.PP
+Destructor\&. Overloading \fBFighter\fP constructor 
+.SH "Member Function Documentation"
+.PP 
+.SS "float Fighter::attack ()\fR [virtual]\fP"
+
+.PP
+Virtual function to attack, can be overridden by child classes\&. 
+.PP
+Reimplemented in \fBEasyNPC\fP, \fBEasyNPC\fP, \fBHardNPC\fP, and \fBHardNPC\fP\&.
+.SS "virtual float Fighter::attack ()\fR [virtual]\fP"
+
+.PP
+Virtual function to attack, can be overridden by child classes\&. 
+.PP
+Reimplemented in \fBEasyNPC\fP, \fBEasyNPC\fP, \fBHardNPC\fP, and \fBHardNPC\fP\&.
+.SS "void Fighter::setHealth (float health)"
+
+.PP
+Function to set fighter's health\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhealth\fP Function to set the health of the fighter 
+.RE
+.PP
+
+.SS "void Fighter::setName (std::string fighterName)"
+
+.PP
+Function to set name of fighter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfighterName\fP Function to set the name of the fighter 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Double Linked List from the source code\&.

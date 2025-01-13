@@ -1,0 +1,182 @@
+\doxysection{double\+Linked\+List.\+h}
+\hypertarget{double_linked_list_8h_source}{}\label{double_linked_list_8h_source}\index{C:/Users/vinus/Documents/Careers/Portfolio/DoubleLinkedList/include/doubleLinkedList.h@{C:/Users/vinus/Documents/Careers/Portfolio/DoubleLinkedList/include/doubleLinkedList.h}}
+\mbox{\hyperlink{double_linked_list_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Includes\ for\ class\ templates\ and\ node\ header\ file}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{double_linked_list_node_8h}{doubleLinkedListNode.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ using\ namespace\ std}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_double_linked_list_a899beba1d4beaca0db784243bbe2ca4e}{DoubleLinkedList}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ private\ :}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ size;\ }
+\DoxyCodeLine{00022\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ head;\ }
+\DoxyCodeLine{00023\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ current;\ }
+\DoxyCodeLine{00024\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ beforeCurrent;\ }
+\DoxyCodeLine{00025\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ afterCurrent;\ }
+\DoxyCodeLine{00026\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ tail;\ }
+\DoxyCodeLine{00027\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ front;\ }
+\DoxyCodeLine{00028\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ back;\ }
+\DoxyCodeLine{00029\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ tempFront;\ }
+\DoxyCodeLine{00030\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ tempBack;\ }
+\DoxyCodeLine{00031\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ tempCurrent;\ }
+\DoxyCodeLine{00032\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ tempPrev;\ }
+\DoxyCodeLine{00033\ \ \ \ \ shared\_ptr<DoubleLinkedListNode<G>>\ tempNext;\ }
+\DoxyCodeLine{00034\ public\ :}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_double_linked_list_a899beba1d4beaca0db784243bbe2ca4e}{DoubleLinkedList}}();\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_ac04237a67255478530c110c5890cf09d}{addFront}}(G\ newElement);\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_abd7021dc48d702bc4b4518c9f5faf92c}{addBack}}(G\ newElement);\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_a0c7d806930656a7e581d2fcea26dd9ef}{addBeforeCurrent}}(G\ newElement);\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_aa93282016785ccf269391db0c0ceaefc}{addAfterCurrent}}(G\ newElement);\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_ac84a308336126c453ab71a31f3e2f23f}{removeHead}}();\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_af234b2a899afe96ea437f8b1dcb4ed50}{removeTail}}();\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_a57989e6b4f2f019fa7daa807405050c9}{sort}}();\ }
+\DoxyCodeLine{00043\ \ \ \ \ G\ \mbox{\hyperlink{class_double_linked_list_aa5f18d31fdb6352e5a9306cdf1d9bd39}{getHead}}();\ }
+\DoxyCodeLine{00044\ \ \ \ \ G\ \mbox{\hyperlink{class_double_linked_list_a5286923e6dbb9ee58ff389b3be5265ac}{getTail}}();\ }
+\DoxyCodeLine{00045\ \ \ \ \ G\ \mbox{\hyperlink{class_double_linked_list_a8037413717fb59c9ecb0a7a1f37a0d1d}{getCurrent}}();\ }
+\DoxyCodeLine{00046\ \ \ \ \ G\ \mbox{\hyperlink{class_double_linked_list_a879faffcc5fa8adf683d9e430de4ae6e}{traverseBack}}();\ }
+\DoxyCodeLine{00047\ \ \ \ \ G\ \mbox{\hyperlink{class_double_linked_list_a8d1a30d9d58faa6be63d38e06f49efaf}{traverseFront}}();\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_double_linked_list_af0cf46a8e3a9ce31a68ffb27be8a88bf}{getSize}}();\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_double_linked_list_ad7459f36a02d10cc652533f4c0302c35}{empty}}();\ }
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00053\ \mbox{\hyperlink{class_double_linked_list_a899beba1d4beaca0db784243bbe2ca4e}{DoubleLinkedList<G>::DoubleLinkedList}}()\ }
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ head\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ head\ points\ to\ NULL}}
+\DoxyCodeLine{00056\ \ \ \ \ current\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ current\ points\ to\ NULL}}
+\DoxyCodeLine{00057\ \ \ \ \ tail\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ tail\ points\ to\ NULL}}
+\DoxyCodeLine{00058\ \ \ \ \ front\ =\ current;\ \textcolor{comment}{//\ front\ points\ to\ current}}
+\DoxyCodeLine{00059\ \ \ \ \ back\ =\ current;\ \textcolor{comment}{//\ back\ points\ to\ current}}
+\DoxyCodeLine{00060\ \ \ \ \ tempFront\ =\ front;\ \textcolor{comment}{//\ tempFront\ points\ to\ front}}
+\DoxyCodeLine{00061\ \ \ \ \ tempBack\ =\ back;\ \textcolor{comment}{//\ tempBack\ points\ to\ back}}
+\DoxyCodeLine{00062\ \ \ \ \ tempCurrent\ =\ current;\ \textcolor{comment}{//\ tempCurrent\ points\ to\ current}}
+\DoxyCodeLine{00063\ \ \ \ \ size\ =\ 0;\ \textcolor{comment}{//\ Size\ is\ 0\ to\ begin\ with}}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_ac04237a67255478530c110c5890cf09d}{DoubleLinkedList<G>::addFront}}(G\ newElement)\ }
+\DoxyCodeLine{00068\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ tempNext\ =\ head;\ \textcolor{comment}{//\ tempNext\ points\ to\ head}}
+\DoxyCodeLine{00070\ \ \ \ \ head\ =\ shared\_ptr<DoubleLinkedListNode<G>>(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_double_linked_list_node}{DoubleLinkedListNode<G>}}(newElement,\ \textcolor{keyword}{nullptr},\ tempNext));\ \textcolor{comment}{//\ Insert\ a\ new\ node\ at\ the\ front\ of\ the\ list}}
+\DoxyCodeLine{00071\ \ \ \ \ front\ =\ head;\ \textcolor{comment}{//\ front\ is\ head\ node}}
+\DoxyCodeLine{00072\ \ \ \ \ current\ =\ head;\ \textcolor{comment}{//\ current\ is\ head\ node}}
+\DoxyCodeLine{00073\ \ \ \ \ size++;\ \textcolor{comment}{//\ size\ incremented\ by\ 1}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ ==\ 1)\ \textcolor{comment}{//\ If\ size\ is\ 1}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ tail\ =\ head;\ \textcolor{comment}{//\ tail\ node\ is\ the\ same\ as\ head\ node}}
+\DoxyCodeLine{00076\ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_abd7021dc48d702bc4b4518c9f5faf92c}{DoubleLinkedList<G>::addBack}}(G\ newElement)\ }
+\DoxyCodeLine{00080\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ tempPrev\ =\ tail;\ \textcolor{comment}{//\ tempPrev\ points\ to\ tail}}
+\DoxyCodeLine{00082\ \ \ \ \ tail\ =\ shared\_ptr<DoubleLinkedListNode<G>>(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_double_linked_list_node}{DoubleLinkedListNode<G>}}(newElement,\ tempPrev,\ \textcolor{keyword}{nullptr}));\ \textcolor{comment}{//\ Insert\ a\ new\ npde\ at\ the\ back\ of\ the\ list}}
+\DoxyCodeLine{00083\ \ \ \ \ back\ =\ tail;\ \textcolor{comment}{//\ back\ is\ tail\ node}}
+\DoxyCodeLine{00084\ \ \ \ \ current\ =\ tail;\ \textcolor{comment}{//\ current\ is\ tail\ node}}
+\DoxyCodeLine{00085\ \ \ \ \ size++;\ \textcolor{comment}{//\ size\ incremented\ by\ 1}}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ ==\ 1)\ \textcolor{comment}{//\ If\ size\ is\ 1}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ head\ =\ tail;\ \textcolor{comment}{//\ head\ node\ is\ the\ same\ as\ tail\ node}}
+\DoxyCodeLine{00088\ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_a0c7d806930656a7e581d2fcea26dd9ef}{DoubleLinkedList<G>::addBeforeCurrent}}(G\ newElement)\ }
+\DoxyCodeLine{00092\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordflow}{if}\ (current\ ==\ head)\ \textcolor{comment}{//\ If\ current\ node\ is\ head\ node}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_double_linked_list_ac04237a67255478530c110c5890cf09d}{addFront}}(newElement);\ \textcolor{comment}{//\ Pass\ newElement\ to\ addFront\ function}}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{comment}{//\ If\ current\ node\ is\ not\ head\ node}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ beforeCurrent\ =\ shared\_ptr<DoubleLinkedListNode<G>>(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_double_linked_list_node}{DoubleLinkedListNode<G>}}(newElement,\ current-\/>getPrev(),\ current));\ \textcolor{comment}{//\ Insert\ a\ new\ node\ before\ the\ current\ node}}
+\DoxyCodeLine{00097\ \ \ \ \ size++;\ \textcolor{comment}{//\ size\ incremented\ by\ 1}}
+\DoxyCodeLine{00098\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_aa93282016785ccf269391db0c0ceaefc}{DoubleLinkedList<G>::addAfterCurrent}}(G\ newElement)\ }
+\DoxyCodeLine{00102\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordflow}{if}\ (current\ ==\ tail)\ \textcolor{comment}{//\ If\ current\ node\ is\ tail\ node}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_double_linked_list_abd7021dc48d702bc4b4518c9f5faf92c}{addBack}}(newElement);\ \textcolor{comment}{//\ Pass\ newElement\ to\ addBack\ function}}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{comment}{//\ If\ current\ node\ is\ not\ tail\ node}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ afterCurrent\ =\ shared\_ptr<DoubleLinkedListNode<G>>(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_double_linked_list_node}{DoubleLinkedListNode<G>}}(newElement,\ current,\ current-\/>getNext()));\ \textcolor{comment}{//\ Insert\ a\ new\ node\ after\ the\ current\ node}}
+\DoxyCodeLine{00107\ \ \ \ \ size++;\ \textcolor{comment}{//\ size\ incremented\ by\ 1}}
+\DoxyCodeLine{00108\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00111\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_ac84a308336126c453ab71a31f3e2f23f}{DoubleLinkedList<G>::removeHead}}()\ }
+\DoxyCodeLine{00112\ \{}
+\DoxyCodeLine{00113\ \ \ \ \ head\ =\ head-\/>getNext();\ }
+\DoxyCodeLine{00114\ \ \ \ \ current\ =\ head;\ }
+\DoxyCodeLine{00115\ \ \ \ \ size-\/-\/;\ }
+\DoxyCodeLine{00116\ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00119\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_af234b2a899afe96ea437f8b1dcb4ed50}{DoubleLinkedList<G>::removeTail}}()\ }
+\DoxyCodeLine{00120\ \{}
+\DoxyCodeLine{00121\ \ \ \ \ tail\ =\ tail-\/>getPrev();\ }
+\DoxyCodeLine{00122\ \ \ \ \ current\ =\ tail;\ }
+\DoxyCodeLine{00123\ \ \ \ \ size-\/-\/;\ \textcolor{comment}{//\ size\ decremented\ by\ 1}}
+\DoxyCodeLine{00124\ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00127\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_double_linked_list_a57989e6b4f2f019fa7daa807405050c9}{DoubleLinkedList<G>::sort}}()\ }
+\DoxyCodeLine{00128\ \{}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00133\ G\ \mbox{\hyperlink{class_double_linked_list_aa5f18d31fdb6352e5a9306cdf1d9bd39}{DoubleLinkedList<G>::getHead}}()\ }
+\DoxyCodeLine{00134\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{string}\ result\ =\ head-\/>getData();\ \textcolor{comment}{//\ result\ variable\ contains\ data\ from\ head\ node}}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordflow}{return}\ result;\ \textcolor{comment}{//\ Returns\ result}}
+\DoxyCodeLine{00137\ \}}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00140\ G\ \mbox{\hyperlink{class_double_linked_list_a5286923e6dbb9ee58ff389b3be5265ac}{DoubleLinkedList<G>::getTail}}()\ }
+\DoxyCodeLine{00141\ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{string}\ result\ =\ tail-\/>getData();\ \textcolor{comment}{//\ result\ variable\ contains\ data\ from\ tail\ node}}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordflow}{return}\ result;\ \textcolor{comment}{//\ Returns\ result}}
+\DoxyCodeLine{00144\ \}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00147\ G\ \mbox{\hyperlink{class_double_linked_list_a8037413717fb59c9ecb0a7a1f37a0d1d}{DoubleLinkedList<G>::getCurrent}}()\ }
+\DoxyCodeLine{00148\ \{}
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{string}\ result\ =\ current-\/>getData();\ \textcolor{comment}{//\ result\ variable\ contains\ data\ from\ node\ current\ node}}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordflow}{return}\ result;\ \textcolor{comment}{//\ Returns\ result}}
+\DoxyCodeLine{00151\ \}}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00154\ G\ \mbox{\hyperlink{class_double_linked_list_a879faffcc5fa8adf683d9e430de4ae6e}{DoubleLinkedList<G>::traverseBack}}()\ }
+\DoxyCodeLine{00155\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{string}\ result\ =\ tail-\/>getData();\ \textcolor{comment}{//\ result\ variable\ contains\ data\ from\ tail\ node}}
+\DoxyCodeLine{00157\ \ \ \ \ tail\ =\ tail-\/>getPrev();\ \textcolor{comment}{//\ Replaces\ tail\ node\ data\ with\ the\ data\ from\ previous\ node}}
+\DoxyCodeLine{00158\ \ \ \ \ size-\/-\/;\ \textcolor{comment}{//\ size\ decremented\ by\ 1}}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordflow}{return}\ result;\ \textcolor{comment}{//\ Returns\ result}}
+\DoxyCodeLine{00160\ \}}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00163\ G\ \mbox{\hyperlink{class_double_linked_list_a8d1a30d9d58faa6be63d38e06f49efaf}{DoubleLinkedList<G>::traverseFront}}()\ }
+\DoxyCodeLine{00164\ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{string}\ result\ =\ head-\/>getData();\ \textcolor{comment}{//\ result\ variable\ contains\ data\ from\ head\ node}}
+\DoxyCodeLine{00166\ \ \ \ \ head\ =\ head-\/>getNext();\ \textcolor{comment}{//\ Replaces\ head\ node\ data\ with\ the\ data\ from\ next\ node}}
+\DoxyCodeLine{00167\ \ \ \ \ size-\/-\/;\ \textcolor{comment}{//\ size\ decremented\ by\ 1}}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordflow}{return}\ result;\ \textcolor{comment}{//\ Returns\ result}}
+\DoxyCodeLine{00169\ \}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00172\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_double_linked_list_af0cf46a8e3a9ce31a68ffb27be8a88bf}{DoubleLinkedList<G>::getSize}}()\ }
+\DoxyCodeLine{00173\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordflow}{return}\ size;\ \textcolor{comment}{//\ Returns\ size}}
+\DoxyCodeLine{00175\ \}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ G>}
+\DoxyCodeLine{00178\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_double_linked_list_ad7459f36a02d10cc652533f4c0302c35}{DoubleLinkedList<G>::empty}}()\ }
+\DoxyCodeLine{00179\ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordflow}{return}\ size\ ==\ 0;\ \textcolor{comment}{//\ Returns\ true\ if\ size\ is\ 0}}
+\DoxyCodeLine{00181\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,119 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+\doxylink{class_player}{Player} class is derived from base class \doxylink{class_fighter}{Fighter}.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_ab25feda5ecb0ab5b3648d49cf7ed2e85}{Player}} (float speed, float \mbox{\hyperlink{class_fighter_ad24d1e9d61eee962e9d89e0eff3bfcee}{resistance}})
+\begin{DoxyCompactList}\small\item\em Overriding class constructor with speed and resistance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_afb45617b2b0bfe6ff070c849c017ecf9}{Player}} (float \mbox{\hyperlink{class_fighter_a523c7ac7f0bdfd85f6cc41c956b156ac}{damage}})
+\begin{DoxyCompactList}\small\item\em Overriding class constructor with damage. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_ab25feda5ecb0ab5b3648d49cf7ed2e85}\label{class_player_ab25feda5ecb0ab5b3648d49cf7ed2e85} 
+{\bfseries Player} (float speed, float \mbox{\hyperlink{class_fighter_ad24d1e9d61eee962e9d89e0eff3bfcee}{resistance}})
+\begin{DoxyCompactList}\small\item\em Overriding class constructor with speed and resistance. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_afb45617b2b0bfe6ff070c849c017ecf9}\label{class_player_afb45617b2b0bfe6ff070c849c017ecf9} 
+{\bfseries Player} (float \mbox{\hyperlink{class_fighter_a523c7ac7f0bdfd85f6cc41c956b156ac}{damage}})
+\begin{DoxyCompactList}\small\item\em Overriding class constructor with damage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_fighter}{Fighter}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Fighter} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fighter_ad582d74ba6327d51b889336051f1bb41}{Fighter}} (float speed, float \mbox{\hyperlink{class_fighter_ad24d1e9d61eee962e9d89e0eff3bfcee}{resistance}})
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_a739a9a1d8b44cdb1c02586af2b6007d4}{set\+Name}} (std\+::string \mbox{\hyperlink{class_fighter_aa2f84026860ee61e7f7ed5fdde4b9816}{fighter\+Name}})
+\begin{DoxyCompactList}\small\item\em Function to set name of fighter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_abbbfd7ac894eb9b1c7689bc0694bc0ba}{set\+Health}} (float \mbox{\hyperlink{class_fighter_a51cfce2cd0f4f0dc5756fae0d85d2cd2}{health}})
+\begin{DoxyCompactList}\small\item\em Function to set fighter\textquotesingle{}s health. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_fighter_aa5c6bf419aab3f1ede8056289e8b4bc5}{attack}} ()
+\begin{DoxyCompactList}\small\item\em Virtual function to attack, can be overridden by child classes. \end{DoxyCompactList}\item 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Fighter} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fighter_ad582d74ba6327d51b889336051f1bb41}{Fighter}} (float speed, float \mbox{\hyperlink{class_fighter_ad24d1e9d61eee962e9d89e0eff3bfcee}{resistance}})
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void {\bfseries set\+Name} (std\+::string \mbox{\hyperlink{class_fighter_aa2f84026860ee61e7f7ed5fdde4b9816}{fighter\+Name}})
+\begin{DoxyCompactList}\small\item\em Function to set name of fighter. \end{DoxyCompactList}\item 
+void {\bfseries set\+Health} (float \mbox{\hyperlink{class_fighter_a51cfce2cd0f4f0dc5756fae0d85d2cd2}{health}})
+\begin{DoxyCompactList}\small\item\em Function to set fighter\textquotesingle{}s health. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_fighter_a7f11b393e7da5c8ce744c390a673b4d6}{attack}} ()
+\begin{DoxyCompactList}\small\item\em Virtual function to attack, can be overridden by child classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_adc89cdfcf04e9e8aa8a45090fc52dc96}\label{class_player_adc89cdfcf04e9e8aa8a45090fc52dc96} 
+float {\bfseries health}
+\begin{DoxyCompactList}\small\item\em Health of the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_fighter}{Fighter}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries fighter\+Name}
+\begin{DoxyCompactList}\small\item\em Variable for name of the fighter. \end{DoxyCompactList}\item 
+float {\bfseries speed}
+\item 
+float {\bfseries resistance}
+\begin{DoxyCompactList}\small\item\em Variables for speed and resistance against damage. \end{DoxyCompactList}\item 
+float {\bfseries health}
+\begin{DoxyCompactList}\small\item\em Variable for health of the fighter. \end{DoxyCompactList}\item 
+float {\bfseries damage}
+\begin{DoxyCompactList}\small\item\em Variable for damage inflicted to opponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_player}{Player} class is derived from base class \doxylink{class_fighter}{Fighter}. 
+
+A derived class used for the playable fighter. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_ab25feda5ecb0ab5b3648d49cf7ed2e85}\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_player_ab25feda5ecb0ab5b3648d49cf7ed2e85} 
+Player\+::\+Player (\begin{DoxyParamCaption}\item[{float}]{speed}{, }\item[{float}]{resistance}{}\end{DoxyParamCaption})}
+
+
+
+Overriding class constructor with speed and resistance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resistance} & Constructor overloaded with speed and resistance \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_afb45617b2b0bfe6ff070c849c017ecf9}\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_player_afb45617b2b0bfe6ff070c849c017ecf9} 
+Player\+::\+Player (\begin{DoxyParamCaption}\item[{float}]{damage}{}\end{DoxyParamCaption})}
+
+
+
+Overriding class constructor with damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & Constructor overloaded with damage \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+Careers/\+Portfolio/\+Dispatch\+Table/\+C++ Project/\+Lab\+Book1/\+Lab\+Book1/\mbox{\hyperlink{_c_09_09_01_project_2_lab_book1_2_lab_book1_2_player_8h}{Player.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+Careers/\+Portfolio/\+Dispatch\+Table/cmake/\mbox{\hyperlink{cmake_2_player_8h}{Player.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+Careers/\+Portfolio/\+Dispatch\+Table/\+C++ Project/\+Lab\+Book1/\+Lab\+Book1/Player.\+cpp\item 
+C\+:/\+Users/vinus/\+Documents/\+Careers/\+Portfolio/\+Dispatch\+Table/cmake/Player.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\doxysection{Fighter Class Reference}
+\hypertarget{class_fighter}{}\label{class_fighter}\index{Fighter@{Fighter}}
+
+
+Base class \doxylink{class_fighter}{Fighter}.  
+
+
+
+
+{\ttfamily \#include $<$Fighter.\+h$>$}
+
+Inheritance diagram for Fighter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fighter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_fighter_a7c7f2ffa4724887e564af51a6154b703}\label{class_fighter_a7c7f2ffa4724887e564af51a6154b703} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Fighter} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fighter_ad582d74ba6327d51b889336051f1bb41}{Fighter}} (float speed, float \mbox{\hyperlink{class_fighter_ad24d1e9d61eee962e9d89e0eff3bfcee}{resistance}})
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_a739a9a1d8b44cdb1c02586af2b6007d4}{set\+Name}} (std\+::string \mbox{\hyperlink{class_fighter_aa2f84026860ee61e7f7ed5fdde4b9816}{fighter\+Name}})
+\begin{DoxyCompactList}\small\item\em Function to set name of fighter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_abbbfd7ac894eb9b1c7689bc0694bc0ba}{set\+Health}} (float \mbox{\hyperlink{class_fighter_a51cfce2cd0f4f0dc5756fae0d85d2cd2}{health}})
+\begin{DoxyCompactList}\small\item\em Function to set fighter\textquotesingle{}s health. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_fighter_aa5c6bf419aab3f1ede8056289e8b4bc5}{attack}} ()
+\begin{DoxyCompactList}\small\item\em Virtual function to attack, can be overridden by child classes. \end{DoxyCompactList}\item 
+\Hypertarget{class_fighter_a7c7f2ffa4724887e564af51a6154b703}\label{class_fighter_a7c7f2ffa4724887e564af51a6154b703} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Fighter} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fighter_ad582d74ba6327d51b889336051f1bb41}{Fighter}} (float speed, float \mbox{\hyperlink{class_fighter_ad24d1e9d61eee962e9d89e0eff3bfcee}{resistance}})
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_fighter_a739a9a1d8b44cdb1c02586af2b6007d4}\label{class_fighter_a739a9a1d8b44cdb1c02586af2b6007d4} 
+void {\bfseries set\+Name} (std\+::string \mbox{\hyperlink{class_fighter_aa2f84026860ee61e7f7ed5fdde4b9816}{fighter\+Name}})
+\begin{DoxyCompactList}\small\item\em Function to set name of fighter. \end{DoxyCompactList}\item 
+\Hypertarget{class_fighter_abbbfd7ac894eb9b1c7689bc0694bc0ba}\label{class_fighter_abbbfd7ac894eb9b1c7689bc0694bc0ba} 
+void {\bfseries set\+Health} (float \mbox{\hyperlink{class_fighter_a51cfce2cd0f4f0dc5756fae0d85d2cd2}{health}})
+\begin{DoxyCompactList}\small\item\em Function to set fighter\textquotesingle{}s health. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_fighter_a7f11b393e7da5c8ce744c390a673b4d6}{attack}} ()
+\begin{DoxyCompactList}\small\item\em Virtual function to attack, can be overridden by child classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_fighter_aa2f84026860ee61e7f7ed5fdde4b9816}\label{class_fighter_aa2f84026860ee61e7f7ed5fdde4b9816} 
+std\+::string {\bfseries fighter\+Name}
+\begin{DoxyCompactList}\small\item\em Variable for name of the fighter. \end{DoxyCompactList}\item 
+\Hypertarget{class_fighter_a4eb91cc2c7ab7a5b3a4332828ff4cf66}\label{class_fighter_a4eb91cc2c7ab7a5b3a4332828ff4cf66} 
+float {\bfseries speed}
+\item 
+\Hypertarget{class_fighter_ad24d1e9d61eee962e9d89e0eff3bfcee}\label{class_fighter_ad24d1e9d61eee962e9d89e0eff3bfcee} 
+float {\bfseries resistance}
+\begin{DoxyCompactList}\small\item\em Variables for speed and resistance against damage. \end{DoxyCompactList}\item 
+\Hypertarget{class_fighter_a51cfce2cd0f4f0dc5756fae0d85d2cd2}\label{class_fighter_a51cfce2cd0f4f0dc5756fae0d85d2cd2} 
+float {\bfseries health}
+\begin{DoxyCompactList}\small\item\em Variable for health of the fighter. \end{DoxyCompactList}\item 
+\Hypertarget{class_fighter_a523c7ac7f0bdfd85f6cc41c956b156ac}\label{class_fighter_a523c7ac7f0bdfd85f6cc41c956b156ac} 
+float {\bfseries damage}
+\begin{DoxyCompactList}\small\item\em Variable for damage inflicted to opponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class \doxylink{class_fighter}{Fighter}. 
+
+Base class used to derieve classes for each fighter. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fighter_ad582d74ba6327d51b889336051f1bb41}\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{Fighter()}{Fighter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fighter_ad582d74ba6327d51b889336051f1bb41} 
+Fighter\+::\+Fighter (\begin{DoxyParamCaption}\item[{float}]{speed}{, }\item[{float}]{resistance}{}\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Overloading \doxylink{class_fighter}{Fighter} constructor 
+\begin{DoxyParams}{Parameters}
+{\em resistance} & Overloading class constructor \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fighter_ad582d74ba6327d51b889336051f1bb41}\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{Fighter()}{Fighter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fighter_ad582d74ba6327d51b889336051f1bb41} 
+Fighter\+::\+Fighter (\begin{DoxyParamCaption}\item[{float}]{speed}{, }\item[{float}]{resistance}{}\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Overloading \doxylink{class_fighter}{Fighter} constructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fighter_aa5c6bf419aab3f1ede8056289e8b4bc5}\index{Fighter@{Fighter}!attack@{attack}}
+\index{attack@{attack}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fighter_aa5c6bf419aab3f1ede8056289e8b4bc5} 
+float Fighter\+::attack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual function to attack, can be overridden by child classes. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_easy_n_p_c_a2032957fb473cf791b01e5dc52a527d9}{Easy\+NPC}}, \mbox{\hyperlink{class_easy_n_p_c_a2032957fb473cf791b01e5dc52a527d9}{Easy\+NPC}}, \mbox{\hyperlink{class_hard_n_p_c_a4077818f8e9d711b1b24ad3c5c1dc947}{Hard\+NPC}}, and \mbox{\hyperlink{class_hard_n_p_c_a4077818f8e9d711b1b24ad3c5c1dc947}{Hard\+NPC}}.
+
+\Hypertarget{class_fighter_a7f11b393e7da5c8ce744c390a673b4d6}\index{Fighter@{Fighter}!attack@{attack}}
+\index{attack@{attack}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fighter_a7f11b393e7da5c8ce744c390a673b4d6} 
+virtual float Fighter\+::attack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual function to attack, can be overridden by child classes. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_easy_n_p_c_a2032957fb473cf791b01e5dc52a527d9}{Easy\+NPC}}, \mbox{\hyperlink{class_easy_n_p_c_a2032957fb473cf791b01e5dc52a527d9}{Easy\+NPC}}, \mbox{\hyperlink{class_hard_n_p_c_a4077818f8e9d711b1b24ad3c5c1dc947}{Hard\+NPC}}, and \mbox{\hyperlink{class_hard_n_p_c_a4077818f8e9d711b1b24ad3c5c1dc947}{Hard\+NPC}}.
+
+\Hypertarget{class_fighter_abbbfd7ac894eb9b1c7689bc0694bc0ba}\index{Fighter@{Fighter}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily \label{class_fighter_abbbfd7ac894eb9b1c7689bc0694bc0ba} 
+void Fighter\+::set\+Health (\begin{DoxyParamCaption}\item[{float}]{health}{}\end{DoxyParamCaption})}
+
+
+
+Function to set fighter\textquotesingle{}s health. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em health} & Function to set the health of the fighter \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fighter_a739a9a1d8b44cdb1c02586af2b6007d4}\index{Fighter@{Fighter}!setName@{setName}}
+\index{setName@{setName}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_fighter_a739a9a1d8b44cdb1c02586af2b6007d4} 
+void Fighter\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{fighter\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Function to set name of fighter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fighter\+Name} & Function to set the name of the fighter \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vinus/\+Documents/\+Careers/\+Portfolio/\+Dispatch\+Table/\+C++ Project/\+Lab\+Book1/\+Lab\+Book1/\mbox{\hyperlink{_c_09_09_01_project_2_lab_book1_2_lab_book1_2_fighter_8h}{Fighter.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+Careers/\+Portfolio/\+Dispatch\+Table/cmake/\mbox{\hyperlink{cmake_2_fighter_8h}{Fighter.\+h}}\item 
+C\+:/\+Users/vinus/\+Documents/\+Careers/\+Portfolio/\+Dispatch\+Table/\+C++ Project/\+Lab\+Book1/\+Lab\+Book1/Fighter.\+cpp\item 
+C\+:/\+Users/vinus/\+Documents/\+Careers/\+Portfolio/\+Dispatch\+Table/cmake/Fighter.\+cpp\end{DoxyCompactItemize}

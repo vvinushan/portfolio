@@ -1,0 +1,174 @@
+.TH "HardNPC" 3 "Double Linked List" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HardNPC \- \fBHardNPC\fP class is derived from base class \fBFighter\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <HardNPC\&.h>\fP
+.PP
+Inherits \fBFighter\fP, and \fBFighter\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHardNPC\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Constructor overloaded with variables speed and resistance\&. "
+.ti -1c
+.RI "\fBHardNPC\fP (float \fBdamage\fP)"
+.br
+.RI "Constructor overloaded with variable damage\&. "
+.ti -1c
+.RI "void \fBsetDifficulty\fP (std::string \fBdifficulty\fP)"
+.br
+.RI "Function to set difficulty to string difficulty\&. "
+.ti -1c
+.RI "float \fBattack\fP () override"
+.br
+.RI "OVerrides virtual function in base class\&. "
+.ti -1c
+.RI "\fBHardNPC\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Constructor overloaded with variables speed and resistance\&. "
+.ti -1c
+.RI "\fBHardNPC\fP (float \fBdamage\fP)"
+.br
+.RI "Constructor overloaded with variable damage\&. "
+.ti -1c
+.RI "void \fBsetDifficulty\fP (std::string \fBdifficulty\fP)"
+.br
+.RI "Function to set difficulty to string difficulty\&. "
+.ti -1c
+.RI "float \fBattack\fP () override"
+.br
+.RI "OVerrides virtual function in base class\&. "
+.in -1c
+
+Public Member Functions inherited from \fBFighter\fP
+.in +1c
+.ti -1c
+.RI "\fB~Fighter\fP ()"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "\fBFighter\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "void \fBsetName\fP (std::string \fBfighterName\fP)"
+.br
+.RI "Function to set name of fighter\&. "
+.ti -1c
+.RI "void \fBsetHealth\fP (float \fBhealth\fP)"
+.br
+.RI "Function to set fighter's health\&. "
+.ti -1c
+.RI "\fB~Fighter\fP ()"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "\fBFighter\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "void \fBsetName\fP (std::string \fBfighterName\fP)"
+.br
+.RI "Function to set name of fighter\&. "
+.ti -1c
+.RI "void \fBsetHealth\fP (float \fBhealth\fP)"
+.br
+.RI "Function to set fighter's health\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBdifficulty\fP"
+.br
+.RI "String variable difficulty\&. "
+.in -1c
+
+Public Attributes inherited from \fBFighter\fP
+.in +1c
+.ti -1c
+.RI "std::string \fBfighterName\fP"
+.br
+.RI "Variable for name of the fighter\&. "
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.ti -1c
+.RI "float \fBresistance\fP"
+.br
+.RI "Variables for speed and resistance against damage\&. "
+.ti -1c
+.RI "float \fBhealth\fP"
+.br
+.RI "Variable for health of the fighter\&. "
+.ti -1c
+.RI "float \fBdamage\fP"
+.br
+.RI "Variable for damage inflicted to opponent\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBHardNPC\fP class is derived from base class \fBFighter\fP\&. 
+
+A derived class used for the harder difficulty NPC\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "HardNPC::HardNPC (float speed, float resistance)"
+
+.PP
+Constructor overloaded with variables speed and resistance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresistance\fP Constructor overloaded with speed and resistance 
+.RE
+.PP
+
+.SS "HardNPC::HardNPC (float damage)"
+
+.PP
+Constructor overloaded with variable damage\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdamage\fP Constructor overloaded with damage 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "float HardNPC::attack ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+OVerrides virtual function in base class\&. 
+.PP
+Reimplemented from \fBFighter\fP\&.
+.SS "float HardNPC::attack ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+OVerrides virtual function in base class\&. 
+.PP
+Reimplemented from \fBFighter\fP\&.
+.SS "void HardNPC::setDifficulty (std::string difficulty)"
+
+.PP
+Function to set difficulty to string difficulty\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdifficulty\fP Function to set difficulty to string difficulty 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Double Linked List from the source code\&.

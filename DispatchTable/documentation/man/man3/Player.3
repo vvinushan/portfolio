@@ -1,0 +1,143 @@
+.TH "Player" 3 "Double Linked List" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Player \- \fBPlayer\fP class is derived from base class \fBFighter\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Player\&.h>\fP
+.PP
+Inherits \fBFighter\fP, and \fBFighter\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayer\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Overriding class constructor with speed and resistance\&. "
+.ti -1c
+.RI "\fBPlayer\fP (float \fBdamage\fP)"
+.br
+.RI "Overriding class constructor with damage\&. "
+.ti -1c
+.RI "\fBPlayer\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Overriding class constructor with speed and resistance\&. "
+.ti -1c
+.RI "\fBPlayer\fP (float \fBdamage\fP)"
+.br
+.RI "Overriding class constructor with damage\&. "
+.in -1c
+
+Public Member Functions inherited from \fBFighter\fP
+.in +1c
+.ti -1c
+.RI "\fB~Fighter\fP ()"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "\fBFighter\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "void \fBsetName\fP (std::string \fBfighterName\fP)"
+.br
+.RI "Function to set name of fighter\&. "
+.ti -1c
+.RI "void \fBsetHealth\fP (float \fBhealth\fP)"
+.br
+.RI "Function to set fighter's health\&. "
+.ti -1c
+.RI "virtual float \fBattack\fP ()"
+.br
+.RI "Virtual function to attack, can be overridden by child classes\&. "
+.ti -1c
+.RI "\fB~Fighter\fP ()"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "\fBFighter\fP (float speed, float \fBresistance\fP)"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "void \fBsetName\fP (std::string \fBfighterName\fP)"
+.br
+.RI "Function to set name of fighter\&. "
+.ti -1c
+.RI "void \fBsetHealth\fP (float \fBhealth\fP)"
+.br
+.RI "Function to set fighter's health\&. "
+.ti -1c
+.RI "virtual float \fBattack\fP ()"
+.br
+.RI "Virtual function to attack, can be overridden by child classes\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBhealth\fP"
+.br
+.RI "Health of the player\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Public Attributes inherited from \fBFighter\fP
+.in +1c
+.ti -1c
+.RI "std::string \fBfighterName\fP"
+.br
+.RI "Variable for name of the fighter\&. "
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.ti -1c
+.RI "float \fBresistance\fP"
+.br
+.RI "Variables for speed and resistance against damage\&. "
+.ti -1c
+.RI "float \fBhealth\fP"
+.br
+.RI "Variable for health of the fighter\&. "
+.ti -1c
+.RI "float \fBdamage\fP"
+.br
+.RI "Variable for damage inflicted to opponent\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBPlayer\fP class is derived from base class \fBFighter\fP\&. 
+
+A derived class used for the playable fighter\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Player::Player (float speed, float resistance)"
+
+.PP
+Overriding class constructor with speed and resistance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresistance\fP Constructor overloaded with speed and resistance 
+.RE
+.PP
+
+.SS "Player::Player (float damage)"
+
+.PP
+Overriding class constructor with damage\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdamage\fP Constructor overloaded with damage 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Double Linked List from the source code\&.
