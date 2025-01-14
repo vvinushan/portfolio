@@ -1,2 +1,2 @@
-# portfolio
+# Coding portfolio
 A collection of my coding work.
